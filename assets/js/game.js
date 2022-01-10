@@ -33,7 +33,7 @@ var fight = function(enemy) {
 
   //Asks player if they want to fight
   var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
-
+    promptFight = promptFight.toLowerCase();
   if (promptFight === "skip" || promptFight === "SKIP") {
     //confirm player wants to skip
     var confirmSkip =  window.confirm("Are you sure you'd like to quit?");
