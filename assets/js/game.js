@@ -29,6 +29,7 @@
 // }
 
 var fight = function(enemy) {
+  
   while (playerInfo.health > 0 && enemy.health > 0) {
 
   //Asks player if they want to fight
@@ -48,6 +49,7 @@ var fight = function(enemy) {
     }
 
   }
+  
   // if player choses to fight, then fight
 if (promptFight === "fight" || promptFight === "FIGHT") {
   // remove enemy's health by subtracting the amount set in the playerInfo.attack variable
